@@ -20,7 +20,7 @@ def main():
     st.header("Data Loaded with Streamlit")
 
     # Example file path (modify this path according to your file location)
-    file_path = 'path/to/your/data.csv'
+    file_path = '/Users/Ayush/Python_Projects/first-web-app/vehicles_us.csv'
 
     # Load data
     df = load_data(file_path)
