@@ -9,7 +9,7 @@ st.title('US Vehicle Sales Stats')
 
 def load_data(file_path):
     try:
-        data = pd.read_csv('/Users/Ayush/Python_Projects/first-web-app/vehicles_us.csv')  # Replace with appropriate function (e.g., pd.read_excel for Excel files)
+        data = pd.read_csv(file_path)  # Replace with appropriate function (e.g., pd.read_excel for Excel files)
     except Exception as e:
         st.error(f"Error reading the data file: {e}")
         return None
@@ -20,7 +20,7 @@ def main():
     st.header("Data Loaded with Streamlit")
 
     # Example file path (modify this path according to your file location)
-    file_path = '/Users/Ayush/Python_Projects/first-web-app/vehicles_us.csv'
+    file_path = 'vehicles_us.csv'
 
     # Load data
     df = load_data(file_path)
