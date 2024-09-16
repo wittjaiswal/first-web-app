@@ -9,7 +9,7 @@ st.title('US Vehicle Sales Stats')
 
 def load_data(file_path):
     try:
-        data = pd.read_csv('C:/Users/ayush/documents/python_vs_code/first-web-app/vehicles_us.csv')  # Replace with appropriate function (e.g., pd.read_excel for Excel files)
+        data = pd.read_csv('/Users/Ayush/Python_Projects/first-web-app/vehicles_us.csv')  # Replace with appropriate function (e.g., pd.read_excel for Excel files)
     except Exception as e:
         st.error(f"Error reading the data file: {e}")
         return None
